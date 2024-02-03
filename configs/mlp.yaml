@@ -1,0 +1,18 @@
+model: mlp
+
+data_path: datasets/CASIA
+class_labels: ["angry", "fear", "happy", "neutral", "sad", "surprise"]
+
+feature_folder: features/6-category/opensmile_casia/
+feature_method: o
+
+opensmile_config: IS10_paraling
+opensmile_path: /Users/zou/opensmile-2.3.0
+
+checkpoint_path: checkpoints/
+checkpoint_name: MLP_OPENSMILE_IS10
+
+params: {
+  alpha: 1.9,
+  max_iter: 700
+}

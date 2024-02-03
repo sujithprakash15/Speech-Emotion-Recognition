@@ -1,0 +1,19 @@
+model: svm
+
+data_path: datasets/CASIA
+class_labels: ["angry", "fear", "happy", "neutral", "sad", "surprise"]
+
+feature_folder: features/6-category/opensmile_casia/
+feature_method: o
+
+opensmile_config: IS10_paraling
+opensmile_path: /Users/zou/opensmile-2.3.0
+
+checkpoint_path: checkpoints/
+checkpoint_name: SVM_OPENSMILE_IS10
+
+params: {
+  kernel: 'rbf',
+  probability: True,
+  gamma: 'auto'
+}
